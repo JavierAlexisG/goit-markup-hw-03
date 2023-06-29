@@ -43,7 +43,6 @@ body{
     
 .one {
     display: flex;
-    gap: 20px;
     justify-content: space-around;
     align-items: center;
 }
@@ -69,14 +68,18 @@ body{
 
 .container {
     width: 1200px;
-    padding: 5px;
-    margin:auto;
+    margin:0 auto;
 }
 
 .mex {
     color:rgb(255,255,255);
     weight:500;
 }
+
+.footer-logo {
+    padding-bottom: 9px;
+}
+
 
 .back-ground-section{
         color: rgb(255, 255, 255);
@@ -126,7 +129,7 @@ body{
     line-height: 1, 14;
     color: var(--primary-text-color);
 }
-    
+
 
 .style-p-index {
     font-weight: 400px;
@@ -152,17 +155,17 @@ body{
     cursor: pointer;
 }
 
-.container  {
-    width: 1200px; 
-    padding-left: 15px;
-    padding-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-shrink: 0;
-}
 
 .section {
     padding-top: 94px;
+}
+
+.tood {
+    border-radius: 4px;
+    border: 20px;
+    cursor: pointer;
+    padding: 8px;
+    margin: 3px;
 }
 
 
@@ -170,12 +173,6 @@ body{
 p,h1,h2,h3 {
 }
 
-.header-logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-left: 215px;
-}
 
 .header-link-index {
     margin: 50px;
@@ -187,6 +184,7 @@ p,h1,h2,h3 {
 
 .link-header {
     margin: 0;
+    color: rgba(117, 117, 117, 1);
 }
 
 ul{
@@ -195,6 +193,10 @@ ul{
 
 footer {
     background: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    height: 252px;
+    justify-content: center;
 }
 
 .list-two {
@@ -205,6 +207,8 @@ flex-direction: row;
 gap: 10px;
 justify-content: center;
 font-family: 'roboto',sans-serif;
+background-color: rgba (245,244,250,1);
+padding: 8px;
 }
 
 .list-three  {
@@ -217,10 +221,6 @@ justify-content: space-evenly;
 }
 
 .list-three li{ 
-    width: 30%;
-    display: inline-block;
-    max-width: 250px;
-    margin:30px;
     box-sizing: border-box;
 }
 
