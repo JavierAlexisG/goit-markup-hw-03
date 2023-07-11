@@ -17,19 +17,26 @@
 
 <body>
   <header class="container one">
+    <div class="container header-elements">
+    <div class="left-side">
     <a href="./index.html" class="header-logo link"><span class="logo-blue">WebStudio</span></a> 
     <nav>
     <ul class="header-menu-list">
       <li>
-        <li><a href="./index.html" class="header-link-index link">Estudio</a></li>
-        <li><a href="./portafolio.html" class="header-link link">portafolio</a></li>
-        <li><a href="#" class="link-header link">Contactos</a></li>
+        <li><a href="./index.html" class="header-link-index link">Estudio</a>
+        </li>
+        <li><a href="./portafolio.html" class="link-header link">portafolio</a>
+        </li>
+        <li><a href="#" class="link-header link">Contactos</a>
+        </li>
       </ul>
     </nav>
+    </div>
     <ul class="header-menu-list">
       <li><a href="mailto:info@devstudio.com" class="link-header link">info@devstudio.com</a></li>
-      <li><a href="380961111111" class="link-header link">+52 55 5529 6000</a></li> </ul>
-  </header>
+      <li><a href="380961111111" class="link-header link">+52 55 5529 6000</a></li> </ul> 
+      </div>
+    </header>
 
   <main>
   <section class="back-ground-section">
@@ -38,9 +45,9 @@
   </section>
 
 
-    <section class="container section">
+    <section class="section">
       <div class="container">
-      <ul class="header-menu-list">
+      <ul class="header-menu-list-l2">
         <li>
           <h3 class="style-h3-index"> ATENCION A LOS DETALLES</h3>
           <p class="style-p-index">Nos atenderemos en todos los detalles y procesos de su negocio,
@@ -71,9 +78,10 @@
       </ul>
     </section>
 
-    <section class="container section">
-      <h2>A que nos dedicamos</h2>
-      <ul class="header-menu-list">
+    <section class="section">
+      <div class="container">
+      <h2 class="h2-work">A que nos dedicamos</h2>
+      <ul class="header-menu-list-l3">
         <li>
           <img src="./images/-pc1.jpg" alt="Trabajo en teclado" width="373">
         </li>
@@ -88,41 +96,53 @@
           <img src="./images/-pc3.jpg" alt="Metaverso" width="373">
         </li>
       </ul>
+      </div>
     </section>
 
-    <section class="container section">
-      <h2> Nuestro Equipo</h2>
-      <ul class="header-menu-list">
-        <li>
+    <section class="section-2">
+      <div class="container">
+      <h2 class="h2-work"> Nuestro Equipo</h2>
+      <ul class="header-menu-list-l3">
+        <li class="border-li">
           <img src="./images/-empresario1.jpg" alt="empresario 1" width="270">
-          <h3 class="style-h3-index"> Andres Cubo</h3>
-          <p class="style-p-index">Diseñador de producto</p>
+          <div class="team-description">
+          <h3 class="style-h3-index-new"> Andres Cubo</h3>
+          <p class="style-p-index">Diseñador de producto</p> 
+        </div>
         </li>
-        <li>
+        <li class="border-li">
           <img src="./images/-empresario2.jpg" alt="empresaria" width="270">
-          <h3 class="style-h3-index">Carla Palacio</h3>
+          <div class="team-description">
+          <h3 class="style-h3-index-new">Carla Palacio</h3>
           <p class="style-p-index">Desarrolladora Fronted</p>
+          </div>
         </li>
-        <li>
+        <li class="border-li">
           <img src="./images/-empresario3.jpg" alt="empresario 3" width="270">
-          <h3 class="style-h3-index">Mario Dorado</h3>
+        <div class="team-description">
+          <h3 class="style-h3-index-new">Mario Dorado</h3>
           <p class="style-p-index">Marketing</p>
+          </div>
         </li>
-        <li>
+        <li class="border-li">
           <img src="./images/-empresario4.jpg" alt="empresario 4" width="270">
-          <h3 class="style-h3-index">Pablo Mijangos</h3>
+          <div class="team-description">
+          <h3 class="style-h3-index-new">Pablo Mijangos</h3>
           <p class="style-p-index">Diseñador ui</p>
+          </div>
         </li>
       </ul>
+      </div>
     </section>
   </main>
 
   
-    <footer class="container mex">
+    <footer class="container-mex">
       <div class="container">
     <a href="./index.html" class="footer-logo link"><span class="logo-blue">WebStudio</span> 
+    </a>
     <address>
-      <ul>
+      <ul class="ul-footer">
         <li>
           <a href="#" class="footer-date link">calz. Ticoman 500, ciudad de Mexico, CDMX, Mexico>
       </a>
@@ -130,7 +150,6 @@
         <li><a href="mailto:info@devstudio.com"class="footer-date link">info@devstudio.com</a>
         </li>
         <li> <a href="tel:+380961111111"class="footer-date link">+52 55 5529 6000</a>
-        </li>
         </li>
       </ul>
     </address>

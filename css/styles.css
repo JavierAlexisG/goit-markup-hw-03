@@ -41,19 +41,24 @@ body{
     color:var(--accent-color);
     }
     
-.one {
+
+
+.left-side {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-
-.link-header:hover, 
-.link-header:focus {
+.link-header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
     color: var(--accent-color);
 }
 
@@ -68,12 +73,42 @@ body{
 
 .container {
     width: 1200px;
-    margin:0 auto;
+    margin: auto;
+}
+
+.one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mex {
-    color:rgb(255,255,255);
-    weight:500;
+background:var(--secundary-background-color);
+display: flex;
+flex-direction: column;
+height: 252px;
+justify-content: center;
+}
+
+.ul-footer {
+list-style: none;
+display: flex;
+flex-direction: column;
+justify-content: left;
+padding: 0;
 }
 
 .footer-logo {
@@ -108,13 +143,63 @@ body{
     height: 75;
     }
 
+    .header-menu-list-l2 {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+.header-menu-list-l2 li {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
 
 .section h2 {
     display:flex; 
     justify-content: center;
 }
 
+.h2-work {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.625;
+    color: var(--primary-text-color);
+    text-align: center;
+    letter-spacing: 1.08px;
+    margin: 0 0 50px;
+    text-align: center;
+}
 
+.header-menu-list-l3 {
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-menu.list-l4 {
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.border-li {
+    flex-basis: calc((100% - 111px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+}
+
+.team-description {
+    padding: 30px 41px;
+}
 
 .header-link-index {
     font-weight: 500;
@@ -126,16 +211,28 @@ body{
 .style-h3-index {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1, 17;
     color: var(--primary-text-color);
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
+.style-h3-index-new {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 17;
+    color: var(--primary-text-color);
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
 .style-p-index {
-    font-weight: 400px;
     font-size: 14px;
     line-height: 1,7;
     color: var(--secundary-text-color);
+    display: flex;
+    justify-content: center;
 }
 
 .footer-logo:focus {
@@ -149,42 +246,75 @@ body{
     color:var(--quarty-text-color);
 }
 
+.footer-date:hover,
+.footer-date:focus {
+    color: var(--accent-color);
+}
+
+.footer-date {
+    display: flex;
+    width: 231px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.42px;
+}
+
 .tood:hover {
     color: var(--quarter-text-color);
-    background-color: var(--quarter-background-color);
-    cursor: pointer;
 }
 
 
+.section-2 {
+    padding: 94px 0;
+    background-color: var(--tertiary-background-color);
+}
+
 .section {
-    padding-top: 94px;
+    padding: 94px 0;
 }
 
 .tood {
+    padding-top: 6px;
+    padding-right: 24px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    flex-shrink: 0;
     border-radius: 4px;
-    border: 20px;
-    cursor: pointer;
-    padding: 8px;
-    margin: 3px;
-}
-
-
-    
-p,h1,h2,h3 {
-}
-
-
-.header-link-index {
-    margin: 50px;
+    background: #f5f4fa;
+    text-align: center;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+    line-height: 1.6;
+    letter-spacing: 0.48px;
+    border: none;
 }
+
+.tood:hover {
+    color: var(--quarty-text-color);
+    background-color: var(--quarter-background-color);
+    cursor: pointer;
+    border-radius: 4px;
+    background: #2196f3;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.48px;
+}
+
+
 
 .link-header {
     margin: 0;
     color: rgba(117, 117, 117, 1);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link-header:hover {
+    color: var(--accent-color);
 }
 
 ul{
@@ -200,37 +330,53 @@ footer {
 }
 
 .list-two {
-list-style-type: none;
+list-style: none;
 display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
-gap: 10px;
 justify-content: center;
-font-family: 'roboto',sans-serif;
-background-color: rgba (245,244,250,1);
-padding: 8px;
+gap: 8px;
+margin-bottom: 50px;
 }
 
 .list-three  {
 display:flex;
 flex-wrap: wrap;
-gap: 10px;
+gap: 30px;
 padding: 0;
 list-style: none;
-justify-content: space-evenly;
+cursor: pointer;
 }
 
-.list-three li{ 
-    box-sizing: border-box;
+.list-three li {
+width: 370px;
+border: 1px solid #eee;
+background: #fff;
 }
 
-.computer {
-    height: 300;
-    left:calc(50%-370px/2- 400px);
-    top: calc(50%- 404px/2- 464px);
-    background: var(--quarty-text-color);
-    border: 1px solid #eeeeee;
-    box-shadow: 0px 1px 1px rgba (0,0,0,0.12),
-    0px 4px 4px rgba (0, 0, 0, 0.06);
-    1 px 4px 6px rgba (0, 0, 0, 0.16) 
+.computer:hover {
+flex-basis: calc((100% - 180px) / 9);
+border: 1px solid #eee;
+background: #fff;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.description-page {
+    padding: 30px;
+}
+
+.h3-style {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+color: var(--primary-text-color);
+letter-spacing: 1.08px;
+display: flex;
+width: 322px;
+flex-direction: column;
+}
+
+.style-p-portafolio {
+font-size: 16px;
+line-height: 1.87;
+color: var(--secundary-text-color);
 }
